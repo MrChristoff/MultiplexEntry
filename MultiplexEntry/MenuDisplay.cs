@@ -17,7 +17,7 @@ namespace MultiplexEntry
         private void WelcomeMessage(string textToDisplay)
         {
             Console.WriteLine(textToDisplay);
-            Console.ReadLine();
+            // Console.ReadLine();
         }
 
     }
