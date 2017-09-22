@@ -1,0 +1,9 @@
+c:\users\lawrencx\documents\visual studio 2015\Projects\MultiplexEntry\MultiplexEntry\bin\Debug\MultiplexEntry.exe.config
+c:\users\lawrencx\documents\visual studio 2015\Projects\MultiplexEntry\MultiplexEntry\bin\Debug\MultiplexEntry.exe
+c:\users\lawrencx\documents\visual studio 2015\Projects\MultiplexEntry\MultiplexEntry\bin\Debug\MultiplexEntry.pdb
+c:\users\lawrencx\documents\visual studio 2015\Projects\MultiplexEntry\MultiplexEntry\obj\Debug\MultiplexEntry.csprojResolveAssemblyReference.cache
+c:\users\lawrencx\documents\visual studio 2015\Projects\MultiplexEntry\MultiplexEntry\obj\Debug\MultiplexEntry.exe
+c:\users\lawrencx\documents\visual studio 2015\Projects\MultiplexEntry\MultiplexEntry\obj\Debug\MultiplexEntry.pdb
+c:\users\lawrencx\documents\visual studio 2015\Projects\MultiplexEntry\MultiplexEntry\obj\Debug\MultiplexEntry.Properties.Resources.resources
+c:\users\lawrencx\documents\visual studio 2015\Projects\MultiplexEntry\MultiplexEntry\obj\Debug\MultiplexEntry.csproj.GenerateResource.Cache
+c:\users\lawrencx\documents\visual studio 2015\Projects\MultiplexEntry\MultiplexEntry\bin\Debug\FilmList.xml
