@@ -7,7 +7,6 @@ using System.Xml.Serialization;
 
 namespace MultiplexEntry
 {
-    [Serializable, XmlRoot("FilmList")]
     public class Film
     {
         public string Rating { get; set; }
