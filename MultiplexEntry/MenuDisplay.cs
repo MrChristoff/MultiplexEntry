@@ -12,6 +12,7 @@ namespace MultiplexEntry
         {
             WelcomeMessage(welcomeText);
             ListFilms(filmList);
+            FilmSelector.GetFilmSelection(filmList);
         }
         private static void WelcomeMessage(string textToDisplay)
         {
@@ -23,7 +24,7 @@ namespace MultiplexEntry
         {
             int count = 1;
 
-            Console.WriteLine("*** Here are availible films ***");
+            Console.WriteLine("*** Here are available films ***");
             Console.WriteLine();
             foreach (var film in filmsToBeListed)
             {
