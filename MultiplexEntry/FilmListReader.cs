@@ -13,17 +13,11 @@ namespace MultiplexEntry
     {
         public void ReadList()
         {
-            // using (filmListStream = new IO.MemoryStream(My.Resources.FilmList.xml)) ;
-            Film film01 = new Film();
-            // FileStream fs = new FileStream("FilmList.xml", FileMode.Open);
+            //TODO: refactor to handle more than one object and then return a collection
             XmlSerializer deserializer = new XmlSerializer(typeof(Film));
             XmlReader reader = XmlReader.Create("FilmList.xml");
-            // TextReader reader = new StreamReader(@"C:\Users\lawrencx\Documents\Visual Studio 2015\Projects\MultiplexEntry\MultiplexEntry\FilmList.xml");
-            object obj = deserializer.Deserialize(reader);
-            film01 = (Film)obj;
-            //reader.Close();
-            Console.WriteLine(film01.Title);
-            Console.WriteLine(film01.Rating);
+            Film film01 = (Film)deserializer.Deserialize(reader); /* deserialized object need to be 'cast' into a Film object, thusly (Film) */
+            
             // https://www.youtube.com/watch?v=jbwjbbc5PjI 14m9s
         }
     }
