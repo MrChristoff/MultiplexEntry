@@ -10,10 +10,10 @@ namespace MultiplexEntry
     {
         static void Main(string[] args)
         {
-            MenuDisplay menu = new MenuDisplay();
-            menu.DisplayMenu();
-            FilmListReader list = new FilmListReader();
-            list.ReadList();
+            MenuDisplay.DisplayMenu(
+                FilmListReader.ListOfFilms(), 
+                "Welcome to Enfield Multiplex"
+                );
         }
     }
 }

@@ -8,16 +8,31 @@ namespace MultiplexEntry
 {
     class MenuDisplay
     {
-        string welcomeText = "Welcome to Enfield Multiplex";
-        public void DisplayMenu()
+        public static void DisplayMenu(List<Film> filmList, string welcomeText)
         {
-            MenuDisplay menu = new MenuDisplay();
-            menu.WelcomeMessage(welcomeText);
+            WelcomeMessage(welcomeText);
+            ListFilms(filmList);
         }
-        private void WelcomeMessage(string textToDisplay)
+        private static void WelcomeMessage(string textToDisplay)
         {
             Console.WriteLine(textToDisplay);
-            // Console.ReadLine();
+            Console.WriteLine();
+        }
+
+        private static void ListFilms(List<Film> filmsToBeListed)
+        {
+            int count = 1;
+
+            Console.WriteLine("*** Here are availible films ***");
+            Console.WriteLine();
+            foreach (var film in filmsToBeListed)
+            {
+                Console.WriteLine("Selection number: " + count);
+                Console.WriteLine("Title: " + film.Title);
+                Console.WriteLine("Rating: " + film.Rating);
+                Console.WriteLine();
+                count++;
+            }
         }
 
     }

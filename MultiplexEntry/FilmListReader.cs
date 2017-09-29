@@ -11,20 +11,19 @@ namespace MultiplexEntry
 {
     class FilmListReader
     {
-        public void ReadList()
+        private static List<Film> ReadList()
         {
-            //TODO: refactor to handle more than one object and then return a collection
-            /*XmlSerializer deserializer = new XmlSerializer(typeof(Film));
-            XmlReader reader = XmlReader.Create("FilmList.xml");
-            Film film01 = (Film)deserializer.Deserialize(reader); /* deserialized object need to be 'cast' into a Film object, thusly (Film) */
             
-
-            List<Film> filmList = new List<Film>();
             XmlSerializer serializer = new XmlSerializer(typeof(List<Film>), new XmlRootAttribute("FilmList"));
             XmlReader reader = XmlReader.Create("FilmList.xml");
-            filmList = (List<Film>)serializer.Deserialize(reader);
+            return (List<Film>)serializer.Deserialize(reader);
+        }
 
-            // https://www.youtube.com/watch?v=jbwjbbc5PjI 14m9s
+        public static List<Film> ListOfFilms()
+        {
+            List<Film> filmList = new List<Film>();
+            filmList = ReadList();
+            return filmList;
         }
     }
 }
