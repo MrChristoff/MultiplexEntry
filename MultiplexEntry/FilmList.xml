@@ -8,4 +8,8 @@
     <Title>Filth</Title>
     <Rating>18</Rating>
   </Film>
+  <Film>
+    <Title>E.T. the Extra-Terrestrial</Title>
+    <Rating>0</Rating>
+  </Film>
 </FilmList>

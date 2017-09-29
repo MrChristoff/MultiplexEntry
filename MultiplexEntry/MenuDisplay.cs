@@ -12,7 +12,7 @@ namespace MultiplexEntry
         {
             WelcomeMessage(welcomeText);
             ListFilms(filmList);
-            FilmSelector.GetFilmSelection(filmList);
+            FilmSelector.DisplayFilmSelection(filmList);
         }
         private static void WelcomeMessage(string textToDisplay)
         {

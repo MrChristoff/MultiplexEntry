@@ -9,18 +9,30 @@ namespace MultiplexEntry
     class FilmSelector
     {
         static string age;
+        static string filmSelection;
         private static void GetAge()
         {
+            Console.WriteLine("Please enter your age:");
             age = Console.ReadLine();
         }
 
-        public static void GetFilmSelection(List<Film> filmList)
+        private static void GetFilmSelection()
+        {
+            Console.WriteLine("Please enter your film selection number:");
+            filmSelection = Console.ReadLine();
+        }
+
+        public static void DisplayFilmSelection(List<Film> filmList)
         {
             GetAge();
-            string filmSelection = Console.ReadLine();
-            Film selectedFilm = filmList[int.Parse(filmSelection)];
-            int filmRating = int.Parse(selectedFilm.Rating);
+            GetFilmSelection();
+
             int customerAge = int.Parse(age);
+            int n = int.Parse(filmSelection) - 1;
+
+            Film selectedFilm = filmList[n];
+            int filmRating = int.Parse(selectedFilm.Rating);
+
             if (CustomerOldEnoughToWatchFilm(customerAge, filmRating))
             {
                 Console.WriteLine("Enjoy " + selectedFilm.Title);
